@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="sender_name">Me</string>
+
+    <string name="reveived_name">Remon Furniture Company</string>
+
+    <string name="sender_message">I stuck in office</string>
+
+    <string name="reveived_message">apeller 15 min event</string>
+
+    <string name="sender_time">06/05/2019 05:43 AM</string>
+
+    <string name="reveived_time">05/05/2019 08:49 PM</string>
+
+    <string name="sender_message_two">Image looks good</string>
+
+    <string name="sender_time_two">08/05/2019 09:23 AM</string>
+
+</resources>

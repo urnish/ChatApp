@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="start"
+    android:gravity="start"
+
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ic_circle_primary_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="5dp"
+            android:src="@drawable/ic_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginStart="5sp"
+        android:id="@+id/cardview_message_detail"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/lvReceivedMessageRootLayout"
+            android:layout_width="250dp"
+            android:background="@color/received_bg_color"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="1dp"
+
+            android:paddingTop="1dp">
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="start"
+                android:id="@+id/text_view_received_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sender_name"
+                android:textSize="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relReceivedImageRoot"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="7dp">
+
+                <ImageView
+
+                    android:id="@+id/img_received_chat"
+
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </RelativeLayout>
+            <TextView
+
+                android:gravity="start"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/text_view_received_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reveived_message"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="end"
+                android:textSize="11sp"
+                android:id="@+id/text_received_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reveived_time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
